@@ -64,7 +64,7 @@ def main(argv=[]):
 
   ac = cexapi.CexAPI(config.get('cex.username'), config.get('cex.apikey'), config.get('cex.secret'))
   dbi = db.DbManager()
-  cx = CexMethods(ac, dbi)
+  cx = cex.CexMethods(ac, dbi)
 
   if args.command == 'balance':
     print "Balance: %s BTC" % ac.get_balance()
