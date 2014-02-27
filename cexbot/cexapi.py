@@ -114,7 +114,7 @@ class CexAPI(object):
       logging.error('price error')
       return False
     price = float(price)
-    balance = float(balance)
+    balance = float(balance['BTC']['available'])
     amount = balance / price
     order_total = amount * price
     if amount > 0.0001:
