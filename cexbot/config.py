@@ -40,8 +40,8 @@ def first_run():
 		write_blank(path_config)
 	if not os.path.isfile(path_db):
 		logging.debug("Writing empty db at: %s" % path_db)
-		db = db.DbManager(path_db)
-		db.init()
+		dbase = db.DbManager(path_db)
+		dbase.init()
 
 def clear_userdata():
 	path_config = get_conf_path()
