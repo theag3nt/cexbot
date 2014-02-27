@@ -31,5 +31,13 @@ def get_parser():
   parser_order.add_argument('price', type=str, default='market', help='price (default: market)', nargs='?')
   parser_order.add_argument('amount', type=str, help='amount')
 
+  # Missing commands
+  parser_cleardata = subparsers.add_parser('cleardata', help='')
+  parser_initdb = subparsers.add_parser('initdb', help='')
+  parser_getmarket = subparsers.add_parser('getmarket', help='')
+  parser_getprice = subparsers.add_parser('getprice', help='')
+  parser_updatequotes = subparsers.add_parser('updatequotes', help='')
+  parser_buybalance = subparsers.add_parser('buybalance', help='')
+
 
   return parser.parse_args()
