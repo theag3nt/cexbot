@@ -20,7 +20,7 @@ CONFIG_DEFAULTS = {
 	'proxy': {
 		'type': '',
 		'host': '127.0.0.1',
-		'port': 8080
+		'port': '8080'
 		},
 	}
 CONFIG_REQUIRED = {
