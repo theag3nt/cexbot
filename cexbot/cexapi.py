@@ -98,7 +98,7 @@ class CexAPI(object):
       'price': price
     }
     r = self.req('place_order', extras)
-    if 'id' in r:
+    if r and 'id' in r:
       return r['id']
     logging.error("Order error")
     return False
